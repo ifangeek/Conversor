@@ -10,6 +10,12 @@ public class Currencies {
     public String codigo;
     public String nombre;
 
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
+
     public String getCodigo() {
         return codigo;
     }

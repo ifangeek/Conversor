@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Conversor.iml" filepath="$PROJECT_DIR$/.idea/Conversor.iml" />
       <module fileurl="file://C:\Users\DIEGO\Conversor\Conversor.iml" filepath="C:\Users\DIEGO\Conversor\Conversor.iml" />
+      <module fileurl="file://C:\Users\diego.pacheco\AndroidStudioProjects\Conversor1\.idea\Conversor.iml" filepath="C:\Users\diego.pacheco\AndroidStudioProjects\Conversor1\.idea\Conversor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Conversor1.iml" filepath="$PROJECT_DIR$/Conversor1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\Users\DIEGO\Conversor\app\app.iml" filepath="C:\Users\DIEGO\Conversor\app\app.iml" />
     </modules>
