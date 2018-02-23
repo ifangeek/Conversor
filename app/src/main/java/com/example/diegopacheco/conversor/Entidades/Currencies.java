@@ -1,6 +1,4 @@
-package com.example.diegopacheco.conversor;
-
-import java.util.List;
+package com.example.diegopacheco.conversor.Entidades;
 
 /**
  * Created by diego.pacheco on 19/02/2018.

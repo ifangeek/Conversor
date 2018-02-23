@@ -1,10 +1,7 @@
 package com.example.diegopacheco.conversor;
 
-import android.app.DownloadManager;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,12 +11,17 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import com.example.diegopacheco.conversor.CallBack.MonedaService;
+import com.example.diegopacheco.conversor.Entidades.Currencies;
+import com.example.diegopacheco.conversor.Entidades.Moneda;
+import com.example.diegopacheco.conversor.Entidades.MonedaCambio;
+import com.example.diegopacheco.conversor.Entidades.Quotes;
+
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 
 import retrofit2.Call;
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         result = (TextView)findViewById(R.id.tv_resultado);
 
         monedaList = new HashMap<>();
+
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
@@ -78,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                         listaCurrencies.add(currencies);
                         Log.d("LISTADO", "CODIGO : "+key+"  NOMBRE :"+monedaList.get(key) + "");
                     }
+                    //ordenar por nombre el listado
                     Collections.sort(listaCurrencies, new Comparator<Currencies>() {
                         @Override
                         public int compare(Currencies o1, Currencies o2) {
@@ -144,8 +148,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Conversor();
 
 
+
+
+
+    }
+
+
+    private void Conversor(){
         convertir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -167,8 +179,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
-
 
 }

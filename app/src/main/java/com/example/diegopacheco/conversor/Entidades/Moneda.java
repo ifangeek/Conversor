@@ -1,10 +1,8 @@
-package com.example.diegopacheco.conversor;
+package com.example.diegopacheco.conversor.Entidades;
 
 import com.google.gson.annotations.SerializedName;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
 
 /**
  * Created by diego.pacheco on 19/02/2018.

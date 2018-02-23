@@ -1,4 +1,4 @@
-package com.example.diegopacheco.conversor;
+package com.example.diegopacheco.conversor.Entidades;
 
 /**
  * Created by diego.pacheco on 20/02/2018.

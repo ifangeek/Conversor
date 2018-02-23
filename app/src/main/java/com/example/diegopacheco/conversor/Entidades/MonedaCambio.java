@@ -1,4 +1,4 @@
-package com.example.diegopacheco.conversor;
+package com.example.diegopacheco.conversor.Entidades;
 
 import java.util.HashMap;
 

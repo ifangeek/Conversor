@@ -1,9 +1,10 @@
-package com.example.diegopacheco.conversor;
+package com.example.diegopacheco.conversor.CallBack;
+
+import com.example.diegopacheco.conversor.Entidades.Moneda;
+import com.example.diegopacheco.conversor.Entidades.MonedaCambio;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.PATCH;
-import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface MonedaService {
