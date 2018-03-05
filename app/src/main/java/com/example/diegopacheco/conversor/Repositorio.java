@@ -56,7 +56,6 @@ public class Repositorio {
                     currencies.setCodigo(key);
                     currencies.setNombre(monedaList.get(key));
                     listaCurrencies.add(currencies);
-
                 }
                 Collections.sort(listaCurrencies, new Comparator<Currencies>() {
                     @Override
@@ -73,18 +72,14 @@ public class Repositorio {
 
             }
         });
-
-
     }
 
 
     public void ListarQuotes(String dato, final ChangeMoney changeMoney){
 
         listaQuotes = new ArrayList<>();
-
         apiInterface = client.getClient().create(APIInterface.class);
         Call<MonedaCambio> call = apiInterface.getCambio(dato);
-
         call.enqueue(new Callback<MonedaCambio>() {
             @Override
             public void onResponse(Call<MonedaCambio> call, Response<MonedaCambio> response) {
@@ -95,12 +90,8 @@ public class Repositorio {
                     quotes.setCodigo(key);
                     quotes.setValor(cambiomonedaList.get(key));
                     listaQuotes.add(quotes);
-
                 }
-
                 changeMoney.onSuccess(listaQuotes);
-
-
         }
 
             @Override
